@@ -1,0 +1,24 @@
+.cirkel {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    background-color: orange;
+    box-shadow: 0.1rem 0.1rem 0.5rem  grey;
+
+}
+
+
+
+
+.spot__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 16rem);
+    gap: 2rem;
+}
+.spot__card {
+    box-shadow: 0.1rem 0.1rem 0.5rem  grey;
+    padding: 1rem;
+}
+.spot__headline {
+    color: rgb(0, 98, 255);
+}

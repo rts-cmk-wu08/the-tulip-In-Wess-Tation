@@ -18,21 +18,22 @@ useEffect(() => {//uef
 rooms && console.log(rooms.roomtypes)
 
 return (
-    <section >
+    <section>
         {loading && <p>Loading...</p>}
         {error && <p>{error}</p>}
         {!error && rooms && (
             <>
-            <h2>{rooms.headline}</h2>
-            <p>{rooms.text}</p>
-            <article className="roooms_cards">
+            <h2 className="big-text center">{rooms.headline}</h2>
+            <p className="medium-text center">{rooms.text}</p>
+            <article className="rooms__cards">
                 {rooms.roomtypes.map(room => (
                     <div className="rooms__card"> 
-                        <p className="rooms__guests">{room.guests}</p>
-                        <p className="rooms__size">{room.size}</p>
                         <img className="rooms__img" src={room.image} alt="the individual rooms" />
+                        <p className="rooms__guests">{room.guests} Guests</p>
+                        <p className="rooms__size">{room.size}</p>
+
                         <h3 className="rooms__type">{room.type}</h3>
-                        <p className="rooms__price">{room.price}</p>
+                        <p className="rooms__price">${room.price}</p>
                         <p className="rooms__text">{room.description}</p>
                     </div>
                 ))}

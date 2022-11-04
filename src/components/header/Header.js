@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./header.css";
-// import logo from "../assets/thetuliplogo.svg";
+import logo from "../../thetuliplogo.svg";
 
 
 const Hero = () => {//sfc
@@ -24,7 +24,7 @@ return (
         {!error && hero && (
             <>
         <img className="hero__img" src={hero.image} alt="Hero billede af hotel" />
-        {/* <img src={logo} className="hero-logo" alt="logo" /> */}
+        <img src={logo} className="hero-logo" alt="logo" />
         <h1 className="hero__headline">{hero.headline}</h1>
         <button className="hero__btn">Book Now</button>
             </>
