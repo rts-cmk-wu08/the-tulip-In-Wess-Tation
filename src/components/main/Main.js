@@ -2,6 +2,7 @@ import Rooms from "./rooms/Rooms"
 import Services from "./services/Services"
 import Spots from "./spots/Spots"
 import Gallery from "./gallery/Gallery"
+import Review from "./review/Review"
 import "./main.css"
 
 function Main() {
@@ -11,6 +12,7 @@ function Main() {
     <Services /> 
     <Spots />
     <Gallery />
+    <Review />
     </main>
 
 

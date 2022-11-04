@@ -23,7 +23,9 @@ return (
         {error && <p>{error}</p>}
         {!error && gallery && (
             <>
-            <article className="">
+            <article className="gallery">
+                <h1 className="big-text center">{gallery.headline}</h1>
+                <p className="medium-text center">{gallery.text}</p>
                 {gallery.images.map(galleries => (
                     <div className="gallery__images"> 
                     <img className="gallery__img" src={galleries.url} alt="gallery pictures" />

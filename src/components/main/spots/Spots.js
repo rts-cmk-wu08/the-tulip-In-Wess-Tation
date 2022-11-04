@@ -27,7 +27,7 @@ return (
             <article className="spot__cards">
                 {spots.map(spot => (
                     <div className="spot__card"> 
-                        <div className="cirkel">{IoRestaurantOutline}</div>
+                        <div className="cirkel"><IoRestaurantOutline className="cirkel__icon"/></div>
                         <h2 className="spot__headline">{spot.name}</h2>
                         <p>{spot.text}</p>
                     </div>
