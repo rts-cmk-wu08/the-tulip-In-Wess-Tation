@@ -1,0 +1,23 @@
+.hero__img {
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.hero__headline {
+    position: absolute;
+    top: 23rem;
+    padding-left: 10rem;
+    font-size: 3rem;
+    width: 30rem;
+    color: white;
+}
+.hero__btn {
+    background-color: rgb(255, 153, 0);
+    top: 35rem;
+    left: 10rem;
+    position: absolute;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color: white;
+}

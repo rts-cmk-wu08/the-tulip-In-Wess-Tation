@@ -1,0 +1,5 @@
+.rooms__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows: 1fr;
+}
