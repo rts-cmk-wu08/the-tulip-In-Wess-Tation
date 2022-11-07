@@ -26,11 +26,11 @@ return (
             <article className="gallery">
                 <h1 className="big-text center">{gallery.headline}</h1>
                 <p className="medium-text center">{gallery.text}</p>
-                {gallery.images.map(galleries => (
-                    <div className="gallery__images"> 
-                    <img className="gallery__img" src={galleries.url} alt="gallery pictures" />
-                    </div>
-                ))}
+                <div className="grid">
+                    {gallery.images.map(galleries => (
+                        <img key={galleries.id} className={`gallery__img grid__${galleries.id}`} src={galleries.url} alt="gallery pictures" />
+                    ))}
+                </div>
             </article>
             </>
         )}
@@ -38,5 +38,16 @@ return (
     </section>
 );
 }
+
+    const ids = [
+        {id: "81", grid: "zero"},
+        {id: "82", grid: "one"},
+        {id: "83", grid: "three"},
+        {id: "84", grid: "four"},
+        {id: "85", grid: "five"},
+        {id: "86", grid: "six"}
+    ]
+
+
 
 export default Gallery;
