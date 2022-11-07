@@ -23,7 +23,7 @@ return (
         {error && <p>{error}</p>}
         {!error && footer && (
             <>
-            <div className="contact">
+            <div>
             <img src={logo} className="footer-logo" alt="logo" />
             <p>Lorem ipsum dolor sit amet consectetur.</p>
             <input className="footer__input" type="text" placeholder="You email address"/>
