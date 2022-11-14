@@ -1,0 +1,13 @@
+.footer {
+    margin-top: 15rem;
+    height: 25rem;
+    background-color: rgb(18, 4, 31);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+}
+.footer__input {
+    background-color: rgb(64, 54, 71);
+    padding: 0.5rem 2rem;
+}
